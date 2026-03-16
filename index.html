@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Hackathon - ShopSmart</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; }
+    header { background: linear-gradient(135deg, #1f6feb, #388bfd); padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 2.8rem; color: #fff; letter-spacing: 2px; }
+    header p { font-size: 1.2rem; color: #cce0ff; margin-top: 10px; }
+    .badge { display: inline-block; background: #238636; color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 0.85rem; margin-top: 16px; }
+    section { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    h2 { font-size: 1.6rem; color: #58a6ff; border-left: 4px solid #1f6feb; padding-left: 12px; margin-bottom: 20px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 24px; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(31,111,235,0.3); }
+    .card h3 { color: #58a6ff; font-size: 1.1rem; margin-bottom: 10px; }
+    .card p { font-size: 0.92rem; color: #8b949e; line-height: 1.6; }
+    .tag { display: inline-block; background: #21262d; color: #79c0ff; font-size: 0.78rem; padding: 3px 10px; border-radius: 12px; margin: 4px 2px; border: 1px solid #30363d; }
+    .ds-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .btn { display: inline-block; margin-top: 30px; padding: 12px 30px; background: #238636; color: #fff; border-radius: 8px; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
+    .btn:hover { background: #2ea043; }
+    footer { text-align: center; padding: 30px; color: #484f58; font-size: 0.85rem; border-top: 1px solid #21262d; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopSmart DSA Hackathon</h1>
+    <p>A Java-based Smart Shopping System powered by Data Structures &amp; Algorithms</p>
+    <span class="badge">Java Project</span>
+  </header>
+
+  <section>
+    <h2>About the Project</h2>
+    <p style="line-height:1.8; color:#8b949e;">ShopSmart is a console-based e-commerce simulation built entirely in Java, demonstrating real-world applications of core Data Structures and Algorithms. The system handles product inventory, customer carts, order management, and delivery routing.</p>
+    <a class="btn" href="https://github.com/santhoshharsha375-afk/DSAHACKATHON" target="_blank">View Source Code on GitHub</a>
+  </section>
+
+  <section>
+    <h2>Modules</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Product Inventory</h3>
+        <p>Manages product catalog with fast search and retrieval using HashMaps and sorted structures.</p>
+        <div class="ds-list"><span class="tag">HashMap</span><span class="tag">TreeMap</span><span class="tag">Sorting</span></div>
+      </div>
+      <div class="card">
+        <h3>Customer Cart</h3>
+        <p>Handles add, remove, and update operations on customer shopping carts efficiently.</p>
+        <div class="ds-list"><span class="tag">LinkedList</span><span class="tag">Stack</span><span class="tag">Queue</span></div>
+      </div>
+      <div class="card">
+        <h3>Order Management</h3>
+        <p>Processes and tracks orders with priority-based scheduling and status updates.</p>
+        <div class="ds-list"><span class="tag">Priority Queue</span><span class="tag">Heap</span></div>
+      </div>
+      <div class="card">
+        <h3>Delivery Support</h3>
+        <p>Optimizes delivery routes and estimates time using graph-based algorithms.</p>
+        <div class="ds-list"><span class="tag">Graph</span><span class="tag">BFS</span><span class="tag">DFS</span></div>
+      </div>
+      <div class="card">
+        <h3>Map &amp; Heap</h3>
+        <p>Core data structure utilities used across modules for efficient data operations.</p>
+        <div class="ds-list"><span class="tag">HashMap</span><span class="tag">Min-Heap</span><span class="tag">Max-Heap</span></div>
+      </div>
+      <div class="card">
+        <h3>Domain Classes</h3>
+        <p>Defines core entities: Product, Customer, Order, Cart with OOP principles.</p>
+        <div class="ds-list"><span class="tag">OOP</span><span class="tag">Encapsulation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data Structures Used</h2>
+    <div class="ds-list">
+      <span class="tag">HashMap</span><span class="tag">LinkedList</span><span class="tag">Stack</span><span class="tag">Queue</span><span class="tag">Priority Queue</span><span class="tag">Min/Max Heap</span><span class="tag">TreeMap</span><span class="tag">Graph</span><span class="tag">BFS</span><span class="tag">DFS</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built by santhoshharsha375-afk &mdash; DSA Hackathon 2026</p>
+  </footer>
+</body>
+</html>
